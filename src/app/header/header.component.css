@@ -1,0 +1,23 @@
+.MyStory{
+  color: white;
+  font-size: 19px;
+}
+
+.MyStory:hover{
+color: rgb(67, 142, 179);
+cursor: pointer;
+}
+
+.Contact{
+  color: white;
+  font-size: 19px;
+}
+
+.Contact:hover{
+color: rgb(67, 142, 179);
+cursor: pointer;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8)
+}

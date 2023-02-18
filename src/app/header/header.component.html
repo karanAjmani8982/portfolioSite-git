@@ -1,0 +1,51 @@
+<div class="modal" [ngStyle]="{'display':display}">
+  <div class="modal-dialog" role="sdocument">
+      <div class="modal-content pull-right" style="margin-top: 60px;width: 150px;">
+
+        <div>
+
+          <div class="modal-body" style="text-align: center;">
+            <span style="font-size: 18px;font-weight: bold;cursor: pointer;" (click)="home()">Home</span>
+            <hr style="border: 0.8px solid black;">
+            <span style="font-size: 18px;font-weight: bold;cursor: pointer;" (click)="myStory()">My Story</span>
+            <hr style="border: 0.8px solid black;">
+            <span style="font-size: 18px;font-weight: bold;cursor: pointer;" (click)="Contact()" >Contact</span>
+            <hr style="border: 0.8px solid black;">
+            <button (click)="onCloseHandled()" style="border-radius: 7px;background-color: white;border: 2px solid black;">
+              <span style="margin-top:3px;color: black;font-weight: bold;font-size: 15px;" >X</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+  </div>
+</div>
+
+<mat-toolbar style="background-color: black;font-weight: bold;font-family:monospace;">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="hidden-xs col-sm-4 col-md-2 col-lg-2">
+        <span style="color: white;font-size: 21px;cursor: pointer;" (click)="karandeepAjmani()">Karandeep Ajmani</span>
+    </div>
+    <div class="col-xs-4 hidden-sm hidden-md hidden-lg" style="margin-top: 5px;margin-left: -25px;">
+      <span style="color: white;font-size: 21px;cursor: pointer;" (click)="karandeepAjmani()">Karandeep Ajmani</span>
+    </div>
+    <div class="hidden-sm hidden-md hidden-lg pull-right">
+      <!-- problem at 991px screen resolution -->
+      <button (click)="mobileHeaderButton()" style="background-color: black;border-radius: 7px;border: 2px solid white;">
+
+        <span style="margin-top:7px;color: white;" class="glyphicon glyphicon-menu-hamburger"></span>
+
+      </button>
+    </div>
+    <div class="hidden-xs col-sm-2 col-md-2 col-lg-1 pull-right" style="text-align: center;">
+      <span class="Contact" (click)="Contact()" >Contact</span>
+    </div>
+    <div class="hidden-xs col-sm-2 col-md-2 col-lg-1 pull-right" style="text-align: center;">
+      <span class="MyStory" (click)="myStory()" >My Story</span>
+    </div>
+    <div class="hidden-xs col-sm-2 col-md-2 col-lg-1 pull-right" style="text-align: center;">
+      <span class="MyStory" (click)="home()" >Home</span>
+    </div>
+  </div>
+</mat-toolbar>

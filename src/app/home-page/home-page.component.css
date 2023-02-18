@@ -1,0 +1,50 @@
+.backgroundImage{
+  height: 47.1em;
+  background-size: cover;
+  width: auto;
+  background-image: url("../../assets/karan.jpg");
+  background-position: 50% 50%;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+.rajBackgroundImage{
+  height: 500px;
+  background-size: contain;
+  width: 500px;
+  background-image: url("../../assets/raj.jpg");
+  /* background-position: 50% 50%; */
+  /* background-position: center;  */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+.letsConnect{
+background-color: transparent;
+color: white;
+border-radius: 20px;
+border: 2px solid white;
+font-size: 18px;
+margin-top: 5px;
+}
+
+.letsConnect:hover{
+color: black;
+background-color:  rgb(67, 142, 179);
+border: 2px solid black;
+}
+
+.spanArrow{
+color: white;
+font-size: 20px;
+margin-left: 5px;
+}
+
+.letsConnect:hover .spanArrow{
+color: black;
+}

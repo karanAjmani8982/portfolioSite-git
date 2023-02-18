@@ -1,0 +1,176 @@
+<div class="container-fluid">
+  <div class="row" style="background-color: rgb(213, 213, 213)">
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+      <div class="row">
+        <span class="hidden-xs"
+          ><p style="font-size: 19px; font-weight: bold; margin-top: 10px">
+            Let's get started:
+          </p></span
+        >
+        <span class="hidden-sm hidden-md hidden-lg"
+          ><h5 style="margin-top: 10px; font-size: 19px; font-weight: bold">
+            Let's get started:
+          </h5></span
+        >
+        <div class="container-fluid">
+          <span
+            style="
+              color: rgb(67, 142, 179);
+              font-size: 15px;
+              margin-bottom: 10px;
+            "
+            class="glyphicon glyphicon-arrow-right"
+          ></span
+          ><span class="" style="color: #464646; font-size: 15px">
+            Want Me To Build Your Personal Profile</span
+          ><br />
+          <span
+            style="
+              color: rgb(67, 142, 179);
+              font-size: 15px;
+              margin-bottom: 10px;
+            "
+            class="glyphicon glyphicon-arrow-right"
+          ></span
+          ><span class="" style="color: #464646; font-size: 15px">
+            One On One Consultation</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 25px">
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+      <div class="row">
+        <span class="hidden-xs"><h2>Get in touch with me!</h2></span>
+        <span class="hidden-sm hidden-md hidden-lg"
+          ><h5 style="margin-top: 20px; font-size: 19px; font-weight: bold">
+            Get in touch with me!
+          </h5></span
+        >
+        <span class="" style="color: #464646; font-size: 15px"
+          >Feel free to ask for anything you need or simply say Hi.</span
+        >
+      </div>
+    </div>
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+      <form class="nameInput" style="font-size: 18px">
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <label>Name</label>
+          </div>
+          <!-- <mat-error *ngIf="nameMaterial.invalid"></mat-error> -->
+        </div>
+        <div class="row">
+          <div class="hidden-xs col-sm-10 col-md-10 col-lg-10">
+            <input
+              matInput
+              placeholder="Name"
+              name="Name"
+              class="name"
+              [formControl]="nameMaterial"
+              [(ngModel)]="name"
+              required
+            />
+          </div>
+          <div class="col-xs-10 hidden-sm hidden-md hidden-lg">
+            <input
+              matInput
+              placeholder="Name"
+              name="Name"
+              class="name"
+              style="width: 150px"
+              [formControl]="nameMaterial"
+              [(ngModel)]="name"
+              required
+            />
+          </div>
+        </div>
+      </form>
+      <form class="emailInput" style="font-size: 18px">
+        <div class="row" style="margin-top: 10px">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <label>Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="hidden-xs col-sm-10 col-md-10 col-lg-10">
+            <input
+              matInput
+              placeholder="Email"
+              name="Email"
+              class="email"
+              [formControl]="emailMaterial"
+              [(ngModel)]="email"
+              pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,3})$"
+              required
+            />
+          </div>
+          <div class="col-xs-10 hidden-sm hidden-md hidden-lg">
+            <input
+              matInput
+              placeholder="Email"
+              name="Email"
+              style="width: 150px"
+              class="email"
+              [formControl]="emailMaterial"
+              [(ngModel)]="email"
+              pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,3})$"
+              required
+            />
+          </div>
+          <!-- <mat-error *ngIf="emailMaterial.invalid"></mat-error> -->
+        </div>
+      </form>
+      <form class="yourMessage" style="font-size: 18px">
+        <div class="row" style="margin-top: 10px">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <label>Message</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="hidden-xs col-sm-10 col-md-10 col-lg-10">
+            <textarea
+              matInput
+              placeholder="Your Message"
+              name="Message"
+              class="message"
+              style="resize: none"
+              cols="21"
+              [(ngModel)]="textArea"
+              [formControl]="textAreaMaterial"
+              required
+            ></textarea>
+          </div>
+          <div class="col-xs-10 hidden-sm hidden-md hidden-lg">
+            <textarea
+              matInput
+              placeholder="Your Message"
+              name="Message"
+              class="message"
+              style="resize: none"
+              style="width: 150px"
+              [(ngModel)]="textArea"
+              [formControl]="textAreaMaterial"
+              required
+            ></textarea>
+          </div>
+        </div>
+      </form>
+      <div class="row" style="margin-top: 10px">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4">
+          <button
+            [disabled]="name === '' || email === '' || textArea === ''"
+            mat-raised-button
+            style="background-color: black; color: white; border-radius: 20px"
+            (click)="sendToMe()"
+          >
+            Send to me
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

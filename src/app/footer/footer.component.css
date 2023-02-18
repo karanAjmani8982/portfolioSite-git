@@ -1,0 +1,15 @@
+.footer{
+  background-color: black;
+position: relative;
+  bottom:0px;
+  left:0px;
+}
+
+.instaImage{
+ /* background-image: url("../../assets/instagram.svg"); */
+ content:url("../../assets/instagram.svg");
+}
+
+.facebbokImage{
+content:url("../../assets/facebook.svg");
+}

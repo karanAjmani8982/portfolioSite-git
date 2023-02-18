@@ -1,0 +1,23 @@
+.raj1BackgroundImage{
+  height: 32em;
+  background-size: cover;
+  width: 32em;
+  background-image: url("../../assets/raj1.jpg");
+  background-position: 50% 50%;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+.rajBackgroundImage{
+  height: 25em;
+  background-size: cover;
+  width: 25em;
+  background-image: url("../../assets/raj1.jpg");
+  background-position: 50% 50%;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
